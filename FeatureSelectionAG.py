@@ -128,7 +128,7 @@ def generations(df,label,size,n_feat,n_parents,mutation_rate,n_gen,X_train,
     return best_chromo,best_score
 
 
-data_bc = pd.read_csv("/Users/macuser/PycharmProjects/pythonProject2/data 2.csv")
+data_bc = pd.read_csv("...../data 2.csv")
 label_bc = data_bc["diagnosis"]
 label_bc = np.where(label_bc == 'M',1,0)
 data_bc.drop(["id","diagnosis","Unnamed: 32"],axis = 1,inplace = True)
